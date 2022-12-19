@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    width: cover;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    padding: 0 2%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.logo{
+    
+    width: 180px;
+    cursor: pointer;
+}
+
+.cart-icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+
+}
+
+.text-box{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 8%;
+}
+
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: 110px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background-image: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+.a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.a{
+    height: 400px;
+    background-image: url(https://th.bing.com/th/id/R.c1d90b8b4c0052e2dfe6074d1629dc3f?rik=4M06RAmqIj2p0Q&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-attachment: fixed;
+    
+  
+}
+
+
+.second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 100%;
+    height: 50vh;
+}
+
+.second{
+    background-color: black;
+    color: white;
+}
+
+.section{
+    
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    bottom: 8%;
+}
+
+
+.videoc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.textin{
+    z-index: 1;
+    display: inline;
+    vertical-align: top;
+    line-height: 16px;
+}
+
+.textin h1{
+    font-size: 100px;
+   
+    margin-left: 110px; 
+}
+
+.textin p{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;  
+}
